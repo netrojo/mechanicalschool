@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos bage</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+        font-family: system-ui;
+    }
+    body{
+        color: #333;
+        background-image: linear-gradient(90deg, #c4e1da, white);
+        background-repeat: no-repeat;
+
+    }
+    .header{
+        margin: 30px;
+    }
+    .header a{
+        color: #333;
+        font-size: 20px;
+    }
+    img{
+        max-width: 100%;
+    }
+    .main{
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    }
+    .main a{
+        color: #333;
+        text-decoration: none;
+    }
+    .main .title{
+        margin-bottom: 80px;
+        margin-right: 10px;
+        text-align: end;
+    }
+    .main .big-box{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        flex-direction: row;
+    }
+    .main .big-box .box{
+        width: 300px;
+        border-radius: 10px;
+        background-color: #eee;
+        padding: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        transition: 0.5s;
+    }
+    .main .big-box .box:hover{
+        transform: translatey(-10px);
+    }
+    .main .big-box .box img{
+        height: 240px; 
+        padding-bottom: 10px;
+        border-radius: 10px;
+    }
+    @media(max-width:767px){
+        .main .big-box{
+            flex-direction: column;
+            gap: 30px;
+        }
+        .main .big-box .box{
+            width: 90%;
+        }
+        .main .title{
+            margin-right: 0;
+            text-align: center;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="tit">
+            <i class="fa-solid fa-arrow-left"></i>  العودة 
+        </a>
+    </div>
+        <!-- start sections -->
+        <div class="main the-first" id="secotions">
+            <div class="title">
+                <h2>فديوهات تعريفية للاقسام المتاحه في المدرسة </h2>
+            </div>
+            <div class="big-box">
+                <a href="https://www.facebook.com/share/8RPe7Xu7k6sBcoqg/">
+                    <div class="box">
+                        <img src="imgs/كهرباء .jpg" alt="">
+                        <p>قسم فني  كهرباء </p>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/share/p/cny7gPJyuYAEkV96/?mibextid=WC7FNe">
+                    <div class="box">
+                        <img src="imgs/الحاسب.jpg" alt="">
+                        <p>قسم فني تكنولوجيا الحاسب </p>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/share/dRgX53Y38D23zDA9/">
+                    <div class="box">
+                        <img src="imgs/الك.jpeg" alt="">
+                        <p>قسم فني الكترونيات </p>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/share/v/kzf3rqbEGijWzkyS/">
+                    <div class="box">
+                        <img src="imgs/خر.jpeg" alt="">
+                        <p>قسم فني تشكيل المعادن </p>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/share/3oLPe1GWCmVD4dcK/">
+                    <div class="box">
+                        <img src="imgs/لح.jpg" style="max-width: 100%;" alt="">
+                        <p> قسم فني تشكيل لحام</p>
+                    </div>
+                </a>
+            </div> 
+        </div>
+        <!-- end sections -->
+</body>
+</html>

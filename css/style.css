@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+body{
+    color: #333;
+    background-image: linear-gradient(90deg, #c4e1da, white);
+    background-repeat: no-repeat;
+
+}
+img{
+    max-width: 100%;
+}
+.header{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.header .tit{
+    font-size: 17px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+}
+@media(max-width:767px){
+    .header{
+        flex-direction: column
+    }
+    .header .tit{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .header .list{
+        margin: 20px auto;
+    }
+}
+.header .list ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+.header .list ul a{
+    /* text-decoration: none; */
+    color: #333;
+    transition: 0.5s;
+}
+.header .list ul a:hover{
+    color: rgb(122, 96, 32);
+    text-decoration: underline;
+}
+.header .list ul .active{
+    text-decoration: none;
+}
+.landing{
+    height: 86vh;
+    width: 100%;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing img{
+    filter: drop-shadow(10px 10px 10px rgb(171, 241, 207));
+    border-radius: 20px;
+    width: 450px;
+    animation-name:up_down;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.main{
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: white;
+}
+.main .title{
+    margin-bottom: 80px;
+}
+.main .big-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    flex-direction: row;
+}
+@media(max-width:767px){
+    .main .big-box{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .main .big-box .box{
+        width: 100%;
+    }
+
+}
+.main .big-box .box{
+    width: 300px;
+    border-radius: 10px;
+    background-color: #eee;
+    padding: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+.main .big-box .box:hover{
+    transform: translatey(-10px);
+}
+.main .big-box .box:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main .big-box .box p{
+    line-height: 1.8;
+}
+.main .big-box .box img{
+    height: 240px; 
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.the-first{
+    background-image: linear-gradient(90deg, #c4e1da, white);
+}
+.the-secound{
+    /* background-image: linear-gradient(90deg, #c4e1da, white); */
+}
+.the-secound .big-box .box{
+    background: none;
+    box-shadow: -1px -1px 10px black;
+}
+.the_contact{    
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: white;
+    text-align: center;
+}
+.the_contact .title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.the_contact .cards{
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+@media(max-width:767px){
+    .the_contact .cards{
+        flex-direction: column;
+    }
+}
+.the_contact .cards > div{
+    box-shadow: 1px 1px 10px #333;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 30px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    transition: 0.5s;
+
+}
+.the_contact .cards > div:hover{
+    transform: translatey(-10px);
+
+}
+.the_contact .cards > div i{
+    margin-top: 10px;
+    font-size: 40px;
+}
+.the_contact .cards .card1 p{
+    letter-spacing: 1.5px;
+    font-size: 25px;
+}
+.the_contact .cards .card2 a{
+    color: white;
+    background-color: rgb(126, 126, 255);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.the_contact .cards .card2 a:hover{
+    scale: 1.05;
+}
+@keyframes up_down{
+    100%{
+        transform: translatey(10px);
+        -webkit-transform: translatey(10px);
+        -moz-transform: translatey(10px);
+        -ms-transform: translatey(10px);
+        -o-transform: translatey(10px);
+}
+}
